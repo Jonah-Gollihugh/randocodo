@@ -1,1 +1,4 @@
-
+IF(
+ADDMONTHS(Birthdate , ((YEAR(TODAY()) - YEAR(Birthdate)) * 12 )) < TODAY(),
+ADDMONTHS(Birthdate , ((YEAR(TODAY()) - YEAR(Birthdate)) * 12 ) + 12 ),
+ADDMONTHS(Birthdate , ((YEAR(TODAY()) - YEAR(Birthdate)) * 12 )))
